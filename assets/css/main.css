@@ -1734,14 +1734,14 @@ body.cursor-hover .cursor__ring {
     /* PROJECTS GRID */
     .projects-section { position: relative; z-index: 1; padding-bottom: 8rem; }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
+   .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
 
     /* Featured = spans 2 cols */
-    .proj-card { border-radius: var(--radius-lg); overflow: hidden; background: var(--glass); border: 1px solid var(--border); transition: border-color 0.3s, transform 0.35s var(--ease-spring); display: flex; flex-direction: column; }
+    .proj-card { max-width:32%;border-radius: var(--radius-lg); overflow: hidden; background: var(--glass); border: 1px solid var(--border); transition: border-color 0.3s, transform 0.35s var(--ease-spring); display: flex; flex-direction: column; }
     .proj-card:hover { border-color: var(--border-hover); transform: translateY(-6px); }
     .proj-card--featured { grid-column: span 2; flex-direction: row; }
 
